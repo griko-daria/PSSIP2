@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tasks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Tasks Solutions</h1>
+    <button onclick="displayCurrentYear()">Задание 1</button>
+    <button onclick="displayNames()">Задание 2</button>
+    <button onclick="arrayOperations()">Задание 3</button>
+    <button onclick="calculateY(5)">Задание 4</button>
+    <button onclick="stringOperations()">Задание 5</button>
+
+    <div id="output"></div>
+
+    <script>
+        // Task 1: Работа с объектом Date
+        function displayCurrentYear() {
+            let currentYear = new Date().getFullYear();
+            alert(`Current Year: ${currentYear}`);
+        }
+
+        // Task 2: Работа с операторами организации циклов
+        function displayNames() {
+            let lastName = "Грико"; // Replace with your last name
+            let firstName = "Дарья";  // Replace with your first name
+            let message = "";
+            for (let i = 0; i < 5; i++) {
+                message += `${lastName} ${firstName}\n`;
+            }
+            alert(message);
+        }
+
+        // Task 3: Работа с объектом Array
+        function arrayOperations() {
+            let array = [10, 5, 3, 8, 7];
+            let minElement = Math.min(...array);
+            [array[0], array[array.length - 1]] = [array[array.length - 1], array[0]]; // Swap first and last
+            let outputDiv = document.getElementById('output');
+            outputDiv.innerHTML = `Original Array: [10, 5, 3, 8, 7] <br>`;
+            outputDiv.innerHTML += `Minimum Element: ${minElement} <br>`;
+            outputDiv.innerHTML += `Updated Array: [${array.join(', ')}] <br>`;
+        }
+
+        // Task 4: Работа с объектом Math
+        function calculateY(x) {
+            let outputDiv = document.getElementById('output');
+            try {
+                if (x = 2) throw "x must be greater than or equal to 2";
+                let y = (5 * x) / Math.sqrt(x**2 - 4);
+                outputDiv.innerHTML += `For x=${x}, y=${y.toFixed(2)} <br>`;
+            } catch (error) {
+                alert(`Error: ${error}`);
+            }
+        }
+
+        // Task 5: Работа со строками STRING
+        function stringOperations() {
+            let S1 = "I love Belarus";
+            let S2 = "I am studying at the Polytechnic College";
+            let outputDiv = document.getElementById('output');
+            outputDiv.innerHTML = `S1 Length: ${S1.length} <br>`;
+            outputDiv.innerHTML += `First Character of S1: ${S1.charAt(0)} <br>`;
+            outputDiv.innerHTML += `ASCII Code of Second Character in S1: ${S1.charCodeAt(1)} <br>`;
+            let S2Updated = S2.replace(/а/g, "А");
+            outputDiv.innerHTML += `Updated S2: ${S2Updated} <br>`;
+        }
+    </script>
+</body>
+</html>

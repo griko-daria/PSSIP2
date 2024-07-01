@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <title>Мой Портфолио</title>
+</head>
+<body>
+    <!-- 1. Вставка html-структуры + шапка сайта -->
+    <header>
+        <h1>Мой Портфолио</h1>
+    </header>
+
+    <section>
+        <h2>Обо мне</h2>
+        <p>Мое имя Даша. Студентка 3 курса ВУЗа. 19 лет. Моя специальность - прикладная математика и информатика. Увлекаюсь программированием. Имею навыки в создании веб-сайтов, проектировании баз данных, алгоритмах.</p>
+    </section>
+
+    <section>
+        <h2>Навыки</h2>
+        <ul>
+            <li>Моделирование 3-D объектов</li>
+            <li>Программирование</li>
+            <li>Анализ данных</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Проекты</h2>
+        <!-- 4. Изображение -->
+        <img src="Моцарт.jpeg" alt="Мой проект">
+    </section>
+
+    <section>
+        <h2>Моя музыка</h2>
+        <!-- 5. Аудио и аудиоплеер -->
+        <audio controls>
+            <source src="Моцарт - Лакримоза.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио-плеер.
+        </audio>
+    </section>
+
+    <section>
+        <h2>Образование</h2>
+        <!-- 6. Таблица -->
+        <table border="1">
+            <tr>
+                <th>Год</th>
+                <th>Название курса</th>
+            </tr>
+            <tr>
+                <td>2022-2025</td>
+                <td>Прикладная математика и информатика</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Контактная форма</h2>
+        <!-- 7. Контактная форма -->
+        <form action="/submit-form.php" method="post">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <input type="submit" value="Отправить">
+        </form>
+    </section>
+
+    <section>
+        <h2>Полезные ссылки</h2>
+        <!-- 8. Ссылки -->
+        <ul>
+            <li><a href="https://github.com/griko-daria/TRPO">GitHub</a></li>
+            <li><a href="http://ggpk.by/Raspisanie/Files/PZT.html">Расписание</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Видео о мне</h2>
+        <!-- 9. Параграф и 10. Видео -->
+        <p>В 2022 году я начала свои исследования. Вот короткое видео об одном из моих проектов.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OvKRKeifvfc?si=mRLqvicgmqARb541" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+</body>
+</html>

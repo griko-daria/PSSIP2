@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое портфолио</title>
+     <!-- Внедрение стилей CSS -->
+    <style>
+        /* Общие стили */
+        body {
+            font-family: 'Times New Roman', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('assets/image/background.jpg'); /* Путь к вашему изображению фона */
+            background-size: cover;
+            background-position: center;
+            color: black; /* Цвет текста на фоне */
+        }
+
+        /* Стили для заголовка */
+        header {
+            padding: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        /* Стили для секций */
+        section {
+            padding: 20px;
+            margin-bottom: 0; /* Убрать нижний отступ между секциями */
+        }
+
+        /* Стили для списка навыков */
+        ul {
+            list-style-type: circle;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Стили для изображения */
+     
+        img {
+            width: 200px; /* Ширина изображения */
+            height: auto; /* Автоматическое масштабирование высоты */
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. Структура html-документа + Мета-теги -->
+        <header>
+            <h1>Мое портфолио</h1>
+        </header>
+
+        <section>
+            <h2>О себе</h2>
+            <p>Грико Дарья. Учащаяся 3 курса ГГПК. 19 лет. Опыт работы - аниматор детских праздников. Люблю классическую музыку. Фильмы в жанре мелодрамы, психологического триллера, комедии. </p>
+        </section>
+
+        <section>
+            <h2>Навыки</h2>
+            <ul>
+                <li>Анимирование 3-D модели</li>
+                <li>Пение</li>
+                <li>Рисование</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Изображения</h2>
+            <!-- 4. Изображения -->
+            <img src="assets/image/Моцарт.jpeg" alt="Моя фотография">
+        </section>
+
+
+        <section>
+            <h2>Любимая музыка</h2>
+            <!-- 5. Аудио и видео-контент -->
+            <audio controls>
+                <source src="assets/audio/Моцарт - Лакримоза.mp3" type="audio/mpeg">
+                Ваш браузер не поддерживает аудио-элемент.
+            </audio>
+        </section>
+
+        <section>
+            <h2>Образование</h2>
+            <!-- 6. Таблицы -->
+            <table border="1">
+                <tr>
+                    <th>Год</th>
+                    <th>Учебное заведение</th>
+                </tr>
+                <tr>
+                    <td>2022-2025</td>
+                    <td>Гродненский Государственный Политехнический Колледж</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Обратная связь</h2>
+            <!-- 7. Пользовательские формы -->
+            <form action="/submit-form.php" method="post">
+                <h3>
+                    <a href="file:///D:/%D0%9F%D0%A1%D0%98%D0%9F/Index2.html">Текст</a>
+                    <h3>
+                        <input type="submit" value="Отправить">
+            </form>
+        </section>
+
+        <section>
+            <h2>Социальные сети</h2>
+            <!-- 8. Гиперссылки -->
+            <ul>
+                <li><a href="https://github.com/griko-daria/TRPO">GitHub</a></li>
+                <li><a href="http://ggpk.by/Raspisanie/Files/PZT.html">Расисание</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Спецсимволы и семантические теги</h2>
+            <!-- 9. Спецсимволы и 10. Семантические теги -->
+            <p>© 2022 Грико Дарья. Все права защищены.</p>
+        </section>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OvKRKeifvfc?si=mRLqvicgmqARb541" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </body>
+</html>

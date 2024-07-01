@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="windo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма Регистрации</title>
+</head>
+<body>
+    <h2>Форма Регистрации</h2>
+    <form action="/submit" method="post">
+        <label for="username">Имя пользователя:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Номер телефона:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="123-45-678" required><br><br>
+
+        <label for="gender">Пол:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="">Выберите</option>
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+            <option value="other">Другой</option>
+        </select><br><br>
+
+        <label>Интересы:</label><br>
+        <input type="checkbox" id="interest1" name="interest1" value="sport">
+        <label for="interest1">Спорт</label><br>
+        <input type="checkbox" id="interest2" name="interest2" value="music">
+        <label for="interest2">Музыка</label><br>
+        <input type="checkbox" id="interest3" name="interest3" value="travel">
+        <label for="interest3">Путешествия</label><br><br>
+
+        <label>Подписаться на новости:</label><br>
+        <input type="radio" id="subscribeYes" name="subscribe" value="yes">
+        <label for="subscribeYes">Да</label>
+        <input type="radio" id="subscribeNo" name="subscribe" value="no">
+        <label for="subscribeNo">Нет</label><br><br>
+
+        <button type="submit">Зарегистрироваться</button>
+        < <input name="reset" type="reset" value="Очистить форму">
+    </form>
+</body>
+</html>

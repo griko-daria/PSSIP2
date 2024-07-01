@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продвижение продукта</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .form-container {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+            .form-container input {
+                display: block;
+                width: calc(100% - 20px);
+                margin: 10px auto;
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+            }
+
+            .form-container button {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: #4CAF50;
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+        .product-container {
+            text-align: left;
+        }
+
+        .product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+            .product img {
+                width: 100px;
+                margin-bottom: 10px;
+            }
+
+        .product-info {
+            text-align: center;
+        }
+
+            .product-info p {
+                color: yellow;
+                margin: 5px 0;
+                transition: color 0.3s;
+            }
+
+                .product-info p:hover {
+                    color: black;
+                }
+
+            .product-info .price {
+                color: #f00;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Внимание</h2>
+            <p>Оставьте ваши контактные данные и наш консультант свяжется с вами в течение 30 секунд</p>
+            <input type="text" placeholder="Введите ваше имя" required>
+            <input type="email" placeholder="Введите ваш E-mail" required>
+            <input type="tel" placeholder="Введите ваш телефон" required>
+            <button>ПОЛУЧИТЬ ПРАЙС</button>
+        </div>
+        <div class="product-container">
+            <div class="product">
+                <img src="assets/image/лр8.jpg" alt="Product Image">
+                <div class="product-info">
+                    <p>Дезодорант-антиперспирант для женщин "С экстрактом ананаса" (60мл) - Ziaja</p>
+                    <p class="price">7,40 руб. <del>7,79 руб.</del> <span style="color: #4CAF50;">-5%</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

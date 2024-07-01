@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS через шаблон</title>
+</head>
+<body>
+    <button id="templateButton">Добавить текст</button>
+
+    <template id="myTemplate">
+        <p>Это текст из шаблона!</p>
+    </template>
+
+    <div id="content"></div>
+
+    <script>
+        document.getElementById("templateButton").addEventListener("click", function() {
+            var template = document.getElementById("myTemplate");
+            var clone = template.content.cloneNode(true);
+            document.getElementById("content").appendChild(clone);
+        });
+    </script>
+</body>
+</html>
